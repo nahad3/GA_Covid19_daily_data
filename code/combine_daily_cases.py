@@ -43,4 +43,4 @@ for county in unique_counties:
 
 
 combined_df = pd.DataFrame(columns= column_list, data = county_cases)
-combined_df.to_csv(os.path.join( save_path, 'Cases_'+str( date.today ( ) ) +'.csv' ))
+combined_df.to_csv(os.path.join( save_path, 'historical_cases.csv' ))
