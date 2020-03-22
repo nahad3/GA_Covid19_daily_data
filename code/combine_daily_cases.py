@@ -13,7 +13,7 @@ no_days = 0
 
 column_list = [ ]
 column_list.append("County")
-for file in os.listdir(daily_csv ):
+for file in sorted(os.listdir(daily_csv )):
     if file.endswith(".csv"):
         data_temp = pd.read_csv(os.path.join(daily_csv,file))
         column_list.append(list(data_temp.columns)[-1])

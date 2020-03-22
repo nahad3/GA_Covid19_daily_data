@@ -40,6 +40,6 @@ dict = {'Counties': county_list, date_report : cases }
 df = pd.DataFrame(dict)
 
 base_path = os.path.join('..','data/cases/daily_csv_files')
-file_name = 'GA_cases_'+date_report+'.csv'
+file_name = date_report+'.csv'
 full_path = os.path.join(base_path,file_name)
 df.to_csv(full_path, index=False)
